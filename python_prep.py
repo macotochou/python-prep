@@ -15,22 +15,26 @@
 def exercise_1(S):
 
     # TODO: Add up the numbers in S using a for-loop and return the sum.
-
-    return 
+    Sum = 0
+    for i in S:
+        Sum += i
+    return Sum
 
 def exercise_2(S):
 
     # TODO: Add up the numbers in S in 2 lines or less and return the sum.
-
-    return 
+    Sum = sum(S)
+    return Sum
 
 def exercise_3():
 
     # TODO: Build a dictionary with:
     #  - keys: tuple of points (x, y)
     #  - values: value of function f = 8x + 3y
-
-    return 
+    Dic = {}
+    for i in range(6):
+        Dic[(i,i)] = 8*i + 3*i
+    return Dic
 
 # ------- Main program -------
 if __name__ == "__main__":
